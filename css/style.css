@@ -38,7 +38,8 @@ body {
   src: url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/4273/pesaro-light.otf") format("opentype");
   src: url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/4273/pesaro-light.woff") format("woff"); }
 #janeAusten {
-  font-family: janeAusten; }
+  font-family: janeAusten;
+  font-size: 120%; }
 
 .aspira {
   font-family: aspira light; }
