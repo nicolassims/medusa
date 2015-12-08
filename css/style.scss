@@ -1,41 +1,40 @@
 @import 'reset';
 
 body {
-  background: url(../images/stormy-weather-background.jpg) no-repeat center;
-  background-size: 100% 188%;
-  color: #ffffff;
-  font-family: 'Oxygen', Arial;
+  background: url(../images/medusa.jpg) no-repeat fixed center;
 }
 
-#shadowBox {
-  float: top;
-  background-color: rgba(0, 0, 0, 0.6);
-  padding: 3% 0 3% 3%;
+@font-face {
+  font-family: 'Aspira';
+  src: url('https://s3-us-west-2.amazonaws.com/s.cdpn.io/4273/aspira.otf') format('opentype');
+  src: url('https://s3-us-west-2.amazonaws.com/s.cdpn.io/4273/aspira.woff') format('woff');
+}
+@font-face {
+  font-family: 'JaneAusten';
+  src: url('https://s3-us-west-2.amazonaws.com/s.cdpn.io/4273/janeausten.woff') format('woff'),
+  url('https://s3-us-west-2.amazonaws.com/s.cdpn.io/4273/janeausten.ttf') format('truetype');
+}
+@font-face {
+  font-family: 'Pesaro';
+  src: url('https://s3-us-west-2.amazonaws.com/s.cdpn.io/4273/pesaro-light.otf') format('opentype');
+  src: url('https://s3-us-west-2.amazonaws.com/s.cdpn.io/4273/pesaro-light.woff') format('woff');
+}
+
+#janeAusten {
+  font-family: janeAusten;
+}
+.aspira {
+  font-family: aspira light;
+}
+
+.pesaro {
+  font-family: Pesaro;
+}
+
+.lightGray {
+  color: #adadad;
+}
+
+#bigMedusa {
   font-size: 300%;
-  font-weight: bold;
-}
-
-.bodyText {
-  font-weight: bold;
-  margin: 2% 2% 2% 5%;
-  line-height: 30px;
-  font-size: 130%;
-}
-
-.icons img {
-  float: right;
-  margin-right: 3%;
-  width: 3%;
-  margin-top: -2%;
-}
-
-#bodyBox {
-  background-color: rgba(0, 0, 0, 0.6);
-  border: double white 7px;
-  float: left;
-  width: 20%;
-  min-width: 200px;
-  margin: 3% 0 0 3%;
-  padding: 1% 2% 3% 2%;
-  overflow: hidden;
 }
