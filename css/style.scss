@@ -2,7 +2,7 @@
 
 body {
   background: url(../images/medusa.jpg) no-repeat fixed center;
-  border: black solid 1px;
+  background-size: auto 70%;
 }
 
 @font-face {
@@ -25,14 +25,15 @@ body {
 
 .pesaro {
   font-family: Pesaro;
-  border: black solid 1px;
 }
 
 .lightGray {
   color: #adadad;
-  border: black solid 1px;
 }
 
+.aspira {
+  font-family: aspira;
+}
 
 #janeAusten {
   font-family: janeAusten;
@@ -41,42 +42,43 @@ body {
   margin-top: 30%;
   margin-right: 19%;
   transform: rotate(270deg);
-  border: black solid 1px;
 }
 
-.aspira {
-  font-family: aspira;
-  border: black solid 1px;
+#journal {
+  font-size: 120%;
+  float: left;
+  border-top: black 1px solid;
+  border-bottom: black 1px solid;
+  width: 15%;
+  padding: 1%;
+  margin: 3% 0 0 30%;
+  text-align: center;
 }
 
 #bigMedusa {
-  font-size: 700%;
+  font-size: 720%;
   float: right;
-  margin-top: -3%;
-  margin-right: -30%;
-  border: black solid 1px;
+  margin-top: -53%;
+  margin-right: 26%;
 }
 
 #volume {
   font-size: 650%;
   float: left;
   transform: rotate(270deg);
-  margin-left: -30%;
-  margin-top: -10%;
-  border: black solid 1px;
+  margin-top: -33%;
+  margin-left: 16%;
 }
 
 #no2 {
   font-size: 250%;
   float: left;
-  margin-left: -18;
-  margin-top: 10%;
-  border: black solid 1px;
+  margin-left: 29%;
+  margin-top: -13%;
 }
 
 #date {
   float: left;
-  margin-left: 43%;
-  margin-top: 50%;
-  border: black solid 1px;
+  margin-left: 46%;
+  margin-top: 22%;
 }
