@@ -23,36 +23,226 @@ table {
   border-collapse: collapse;
   border-spacing: 0; }
 
-body {
-  background: url(../images/medusa.jpg) no-repeat fixed center;
-  background-size: auto 70%; }
-
 @font-face {
   font-family: 'Aspira';
   src: url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/4273/aspira.otf") format("opentype");
-  src: url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/4273/aspira.woff") format("woff"); }
+  src: url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/4273/aspira.woff") format("woff");
+  font-weight: normal;
+  font-style: normal; }
 @font-face {
   font-family: 'JaneAusten';
-  src: url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/4273/janeausten.woff") format("woff"), url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/4273/janeausten.ttf") format("truetype"); }
+  src: url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/4273/janeausten.woff") format("woff"), url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/4273/janeausten.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal; }
 @font-face {
   font-family: 'Pesaro';
   src: url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/4273/pesaro-light.otf") format("opentype");
-  src: url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/4273/pesaro-light.woff") format("woff"); }
+  src: url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/4273/pesaro-light.woff") format("woff");
+  font-weight: normal;
+  font-style: normal; }
+section {
+  border: 1px solid #777;
+  overflow: hidden;
+  max-width: 720px;
+  position: relative;
+  margin: 2rem auto; }
+
+header {
+  display: flex;
+  flex-direction: row-reverse;
+  margin-top: 2rem; }
+
+h1 {
+  font-family: Pesaro, Arial, sans-serif;
+  font-size: 8rem; }
+
+header h1 {
+  margin: 0;
+  text-align: right;
+  line-height: .6;
+  padding-right: 3rem; }
+
+main {
+  margin-top: 2rem;
+  display: flex;
+  margin-bottom: 4rem; }
+
+h1#issue-info {
+  font-size: 3rem;
+  color: #aaa;
+  text-transform: uppercase;
+  text-align: center;
+  width: 7rem; }
+
+h1 span#volume {
+  display: inline-block;
+  transform: rotate(-90deg) translateX(-8rem);
+  margin-left: -8rem;
+  font-size: 6rem; }
+
+h1 span#issue {
+  display: block;
+  margin-top: 17rem;
+  margin-left: 1rem;
+  width: 8rem; }
+
+h1 span#issue sup {
+  line-height: 1;
+  display: inline-block;
+  font-size: 1.5rem; }
+
+time {
+  width: 100%;
+  display: block;
+  position: absolute;
+  bottom: 0;
+  display: block;
+  font-size: 1.2rem;
+  margin-top: 4rem;
+  padding-top: 1rem;
+  padding-bottom: 1rem; }
+
+time, h2 {
+  font-family: Aspira;
+  border-top: 1px solid #333;
+  border-bottom: 1px solid #333;
+  text-transform: uppercase;
+  text-align: center; }
+
+header h2 {
+  width: 15rem;
+  font-size: 1.2rem;
+  padding-top: .9rem;
+  padding-bottom: .9rem;
+  color: #333;
+  margin-top: 0; }
+
+span#period {
+  display: inline-block;
+  margin-left: -1.2rem; }
+
+span#number {
+  padding-left: .5rem; }
+
+figure img {
+  display: block;
+  width: 90%;
+  margin: 0 auto; }
+
+figure figcaption {
+  font-family: JaneAusten, script;
+  color: #aa8;
+  font-size: 1.1rem;
+  transform: rotate(-90deg) translate(20rem, 17rem); }
+
+@media screen and (max-width: 750px) {
+  figure img {
+    width: 80%; }
+
+  figure figcaption {
+    transform: none; }
+
+  main {
+    margin-top: 0; } }
+@media screen and (max-width: 650px) {
+  figure figcaption {
+    transform: none; }
+
+  header {
+    flex-direction: column; }
+
+  header h2 {
+    width: 100%;
+    margin-top: 1rem; }
+
+  figure figcaption {
+    margin-left: -20%; } }
+@media screen and (max-width: 550px) {
+  main {
+    flex-direction: column; }
+
+  h1 span#volume {
+    transform: none;
+    margin: 0;
+    display: inline;
+    font-size: 1.2rem;
+    font-weight: 100; }
+
+  h1 span#issue {
+    display: inline;
+    margin: 0;
+    font-size: 1.2rem;
+    font-weight: 100; }
+
+  h1#issue-info {
+    width: 95%;
+    line-height: 0;
+    text-align: right;
+    margin: 0; }
+
+  h1 span#issue sup {
+    font-size: .1rem;
+    line-height: 0; }
+
+  h1 span#number {
+    padding-left: 1rem; }
+
+  figure img {
+    width: 60%;
+    margin-top: -2rem; }
+
+  figure figcaption {
+    display: none; }
+
+  header {
+    margin-bottom: 0; }
+
+  header h1 {
+    font-size: 4rem;
+    text-align: center; } }
+/*
+body {
+  background: url(../images/medusa.jpg) no-repeat fixed center;
+  background-size: auto 70%;
+}
+
+@font-face {
+  font-family: 'Aspira';
+  src: url('https://s3-us-west-2.amazonaws.com/s.cdpn.io/4273/aspira.otf') format('opentype');
+  src: url('https://s3-us-west-2.amazonaws.com/s.cdpn.io/4273/aspira.woff') format('woff');
+}
+
+@font-face {
+  font-family: 'JaneAusten';
+  src: url('https://s3-us-west-2.amazonaws.com/s.cdpn.io/4273/janeausten.woff') format('woff'),
+  url('https://s3-us-west-2.amazonaws.com/s.cdpn.io/4273/janeausten.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'Pesaro';
+  src: url('https://s3-us-west-2.amazonaws.com/s.cdpn.io/4273/pesaro-light.otf') format('opentype');
+  src: url('https://s3-us-west-2.amazonaws.com/s.cdpn.io/4273/pesaro-light.woff') format('woff');
+}
+
 .pesaro {
-  font-family: Pesaro; }
+  font-family: Pesaro;
+}
 
 .lightGray {
-  color: #adadad; }
+  color: #adadad;
+}
 
 .aspira {
-  font-family: aspira; }
+  font-family: aspira;
+}
 
 #janeAusten {
   font-family: janeAusten;
   font-size: 110%;
   float: right;
   margin: 30% 19% 0 0;
-  transform: rotate(270deg); }
+  transform: rotate(270deg);
+}
 
 #journal {
   font-size: 120%;
@@ -62,28 +252,33 @@ body {
   width: 15%;
   padding: 1%;
   margin: 3% 0 0 25%;
-  text-align: center; }
+  text-align: center;
+}
 
 #bigMedusa {
   font-size: 720%;
   float: right;
-  margin: -52% 32% 0 0; }
+  margin: -52% 32% 0 0;
+}
 
 #volume {
   font-size: 650%;
   float: left;
   transform: rotate(270deg);
-  margin: -30% 0 0 16%; }
+  margin: -30% 0 0 16%;
+}
 
 #no2 {
   font-size: 250%;
   float: left;
-  margin: -9% 0 0 29%; }
+  margin: -9% 0 0 29%;
+}
 
 #o {
   vertical-align: super;
   font-size: 60%;
-  margin-left: -16%; }
+  margin-left: -16%;
+}
 
 #date {
   float: left;
@@ -92,6 +287,7 @@ body {
   border-bottom: solid black 3px;
   text-align: center;
   width: 35%;
-  padding: .5%; }
+  padding: .5%;
+}*/
 
 /*# sourceMappingURL=style.css.map */
