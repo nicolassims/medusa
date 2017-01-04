@@ -23,6 +23,10 @@ table {
   border-collapse: collapse;
   border-spacing: 0; }
 
+body {
+  background: url(../images/medusa.jpg) no-repeat fixed center;
+  background-size: auto 70%; }
+
 @font-face {
   font-family: 'Aspira';
   src: url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/4273/aspira.otf") format("opentype");
@@ -45,84 +49,58 @@ section {
   overflow: hidden;
   max-width: 720px;
   position: relative;
-  margin: 2rem auto; }
+  margin: 2vw auto; }
 
 header {
   display: flex;
   flex-direction: row-reverse;
-  margin-top: 2rem; }
+  margin-top: 2vw; }
 
 h1 {
   font-family: Pesaro, Arial, sans-serif;
-  font-size: 8rem; }
+  font-size: 8vw; }
 
 header h1 {
   margin: 0;
   text-align: right;
   line-height: .6;
-  padding-right: 3rem; }
+  padding-right: 3vw; }
 
 main {
-  margin-top: 2rem;
+  margin-top: 2vw;
   display: flex;
-  margin-bottom: 4rem; }
+  margin-bottom: 4vw; }
 
 h1#issue-info {
-  font-size: 3rem;
+  font-size: 3vw;
   color: #aaa;
   text-transform: uppercase;
   text-align: center;
-  width: 7rem; }
+  width: 7vw; }
 
 h1 span#volume {
   display: inline-block;
-  transform: rotate(-90deg) translateX(-8rem);
-  margin-left: -8rem;
-  font-size: 6rem; }
+  transform: rotate(-90deg) translateX(-8vw);
+  margin-left: -8vw;
+  font-size: 6vw; }
 
 h1 span#issue {
   display: block;
-  margin-top: 17rem;
-  margin-left: 1rem;
-  width: 8rem; }
+  margin-top: 17vw;
+  margin-left: 1vw;
+  width: 8vw; }
 
 h1 span#issue sup {
   line-height: 1;
   display: inline-block;
-  font-size: 1.5rem; }
-
-time {
-  width: 100%;
-  display: block;
-  position: absolute;
-  bottom: 0;
-  display: block;
-  font-size: 1.2rem;
-  margin-top: 4rem;
-  padding-top: 1rem;
-  padding-bottom: 1rem; }
-
-time, h2 {
-  font-family: Aspira;
-  border-top: 1px solid #333;
-  border-bottom: 1px solid #333;
-  text-transform: uppercase;
-  text-align: center; }
-
-header h2 {
-  width: 15rem;
-  font-size: 1.2rem;
-  padding-top: .9rem;
-  padding-bottom: .9rem;
-  color: #333;
-  margin-top: 0; }
+  font-size: 1.5vw; }
 
 span#period {
   display: inline-block;
-  margin-left: -1.2rem; }
+  margin-left: -1.2vw; }
 
 span#number {
-  padding-left: .5rem; }
+  padding-left: .5vw; }
 
 figure img {
   display: block;
@@ -132,8 +110,8 @@ figure img {
 figure figcaption {
   font-family: JaneAusten, script;
   color: #aa8;
-  font-size: 1.1rem;
-  transform: rotate(-90deg) translate(20rem, 17rem); }
+  font-size: 1.1vw;
+  transform: rotate(-90deg) translate(20vw, 17vw); }
 
 /*
 body {
@@ -223,6 +201,44 @@ body {
   text-align: center;
   width: 35%;
   padding: .5%;
-}*/
+}
+
+
+
+
+
+
+
+
+
+
+
+time {
+  width: 100%; display: block;
+  position: absolute; bottom: 0;
+  display: block; font-size: 1.2vw;
+  margin-top: 4vw;
+  padding-top: 1vw; padding-bottom: 1vw;
+}
+
+time, h2 {
+  font-family: Aspira;
+  border-top: 1px solid #333;
+  border-bottom: 1px solid #333;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+header h2 {
+  width: 15vw; font-size: 1.2vw;
+  padding-top: .9vw;
+  padding-bottom: .9vw;
+  color: #333; margin-top: 0;
+}
+
+
+
+
+*/
 
 /*# sourceMappingURL=style.css.map */
