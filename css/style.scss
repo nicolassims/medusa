@@ -1,8 +1,10 @@
 @import 'reset';
 
 body {
-  background: url(../images/medusa.jpg) no-repeat fixed center;
-  background-size: auto 70%;
+  background: url(../images/medusa.jpg) no-repeat center;
+  background-size: auto 80%;
+  border: black 1px solid;
+  margin: 2vh 30vw 0 30vw;
 }
 
 @font-face {
@@ -45,7 +47,7 @@ header {
 
 h1 {
   font-family: Pesaro, Arial, sans-serif;
-  font-size: 8vw;
+  font-size: 4vw;
 }
 
 header h1 {
@@ -66,16 +68,17 @@ h1#issue-info {
   text-align: center; width: 7vw;
 }
 
-h1 span#volume {
+#volume {
   display: inline-block;
-  transform: rotate(-90deg) translateX(-8vw);
-  margin-left: -8vw; font-size: 6vw;
+  transform: rotate(-90deg) translateX(-35vh);
+  margin-left: -7vw;
+  font-size: 6vw;
 }
 
-h1 span#issue {
+#issue {
   display: block;
-  margin-top: 17vw;
-  margin-left: 1vw;
+  margin-top: 27vw;
+  margin-left: 2vw;
   width: 8vw;
 }
 
@@ -90,19 +93,43 @@ span#period {
   margin-left: -1.2vw;
 }
 
-span#number {
+#number {
   padding-left: .5vw;
 }
 
-figure img {
-  display: block; width: 90%;
-  margin: 0 auto;
+#medusa {
+  padding-left: 17vw;
+  font-size: 6vw;
 }
 
-figure figcaption {
+#publication {
+  float: left;
+  padding: 2vh 1vw 2vh 1vw;
+  margin: -10vh 0 0 1vw;
+  width: 35%;
+  border-bottom: 1px solid #333;
+}
+
+figcaption {
   font-family: JaneAusten, script;
   color: #aa8; font-size: 1.1vw;
-  transform: rotate(-90deg) translate(20vw, 17vw);
+  transform: rotate(-90deg) translate(37vh, 13vw);
+}
+
+time {
+  display: block;
+  font-size: 1.2vw;
+  margin-top: 11vh;
+  padding-top: 2vh;
+  padding-bottom: 2vh;
+}
+
+time, h2 {
+  font-family: Aspira;
+  border-top: 1px solid #333;
+  border-bottom: 3px solid #333;
+  text-transform: uppercase;
+  text-align: center;
 }
 
 /*
